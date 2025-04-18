@@ -1,0 +1,93 @@
+    def p_controller_to_twist(self,array, linear_speed=0.05, k_p_angular=0.05):
+        array = np.array(array)
+        h, w = array.shape
+        desired = np.array([h / 2, w / 2])
+        actual = self.compute_heat_center(array)
+        error = desired - actual  # [dy, dx]
+
+        twist = Twist()
+        twist.linear.x = linear_speed                # Constant forward speed
+        twist.angular.z = k_p_angular * (-error[1])  # Rotate to center heat horizontally
+        print(k_p_angular * (-error[1]))
+        self.publisher_.publish(twist)
+
+
+    def valid_heat_x_y(self, array, threshold=30.0):
+        if array is None:
+            return False
+
+        array = np.array(array)
+
+        if array.size == 0:
+            return False
+
+        if np.max(array) >= threshold:
+            self.filtered_x_y_list.append(array)
+            return True
+
+        return False
+
+
+
+    def rotate_once(self):
+        twist = Twist()
+        
+        # get current yaw angle
+        current_yaw = self.yaw
+        c_yaw = complex(math.cos(current_yaw),math.sin(current_yaw))
+        target_yaw = current_yaw + math.radians(355)
+        c_target_yaw = complex(math.cos(target_yaw),math.sin(target_yaw))
+        c_change = c_target_yaw / c_yaw
+        c_change_dir = np.sign(c_change.imag)
+        twist.linear.x = 0.0
+        twist.angular.z = c_change_dir * rotatechange
+        self.publisher_.publish(twist)
+        c_dir_diff = c_change_dir
+       
+        while(c_change_dir * c_dir_diff > 0):
+            current_yaw = self.yaw
+            c_yaw = complex(math.cos(current_yaw),math.sin(current_yaw))
+            c_change = c_target_yaw / c_yaw
+            c_dir_diff = np.sign(c_change.imag)
+
+            #replace with front sensor only
+            if(self.valid_heat(self.latest_left_temp)):
+                pass
+
+        self.stopbot()
+
+
+    def compute_heat_center(self, array):
+        array = np.array(array)
+        if array.size == 0 or array.ndim != 2:
+            return np.array([0, 0])  # fallback or raise error
+
+        h, w = array.shape
+        total = np.sum(array)
+        if total == 0:
+            return np.array([h / 2, w / 2])
+
+        y_idx, x_idx = np.indices(array.shape)
+        y_center = np.sum(y_idx * array) / total
+        x_center = np.sum(x_idx * array) / total
+        return np.array([y_center, x_center])
+
+
+    def log_temperature(self):
+        x, y = self.get_robot_grid_position()
+        if x is None or y is None:
+            return  # Skip if tf lookup failed
+
+        with self.lock:
+            # Check and reshape properly
+            if self.latest_left_temp is not None and len(self.latest_left_temp) == 64:
+                heat_array = np.array(self.latest_left_temp).reshape((8, 8))
+                if self.valid_heat_x_y(heat_array):
+                    position = self.compute_heat_center(heat_array)
+                    self.unfiltered_x_y_list.append(position)
+
+            elif self.latest_right_temp is not None and len(self.latest_right_temp) == 64:
+                heat_array = np.array(self.latest_right_temp).reshape((8, 8))
+                if self.valid_heat_x_y(heat_array):
+                    position = self.compute_heat_center(heat_array)
+                    self.unfiltered_x_y_list.append(position)
