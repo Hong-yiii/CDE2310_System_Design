@@ -4,6 +4,7 @@ title: Thermal Subsystem
 
 # 🔗 Navigation
 
+- [Home](index.md)
 - [The Challenge](challenge.md)
 - [General System](general-system.md)
 - [Software Subsystem](software.md)
