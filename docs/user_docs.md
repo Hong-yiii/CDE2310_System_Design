@@ -20,7 +20,7 @@ title: End User Documentation and BOM
 
 <div style="text-align: center; margin: 2rem 0;">
   <iframe 
-    src="your-file.pdf" 
+    src="assets/images/End-User-Documentation.pdf" 
     width="80%" 
     height="600px" 
     style="border: none; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);"
