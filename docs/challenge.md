@@ -36,7 +36,7 @@ All modules are governed by a centralized controller that manages sensor fusion,
 
 An example of the maze is given below._
 
-![Maze Layout](assets/images/maze_picture.png)
+![Maze Layout](assets/images/the_challenge/maze_picture.png)
 ---
 
 ## 1.2 Mission Objectives

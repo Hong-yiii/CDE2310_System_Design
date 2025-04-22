@@ -18,4 +18,3 @@ title: General System
 
 # General System
 
-Content coming soon.
