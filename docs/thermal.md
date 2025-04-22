@@ -11,7 +11,7 @@ title: Thermal Subsystem
 - [Mechanical Subsystem](mechanical.md)
 - [Electrical Subsystem](electrical.md)
 - [Thermal Subsystem](thermal.md)
-- [Testing & Validation](testing.md)
+- [End User Documentation & BOM](user_docs.md)
 - [Areas for Improvement](improvements.md)
 
 ---
