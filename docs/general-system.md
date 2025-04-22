@@ -130,8 +130,9 @@ This architecture allows us to:
 - Decompose complex behavior
 - Replan dynamically based on ramp location, sensor feedback, or BT tree failure
 
+---
 
-### Extra information on State Transitions and how they are actually defined in the code
+## Extra information on State Transitions and how they are actually defined in the code
 
 
 #### 1. Transition from `Initializing` → `Exploratory_Mapping`
@@ -247,3 +248,5 @@ def control_loop(self):
 - The robot ascends the ramp and launches a final ball.
 
 ---
+
+## [Software Subsystem](software.md)

@@ -146,3 +146,5 @@ This combination of real-time filtering, angle-based fusion, and dual-perspectiv
 | Visualization                         | `publish_visualization_markers()`                 |
 
 ---
+
+## [End User Documentation & BOM](user_docs.md)

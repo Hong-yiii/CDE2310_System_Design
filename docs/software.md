@@ -514,3 +514,7 @@ Key tuning areas:
 | `use_padding`       | Whether to pad obstacles in the occupancy grid                               | False  |
 | `padding`           | Number of cells to pad around obstacles when enabled                         | 1      |
 | `fast_explore`      | If `True`, uses LIDAR-detected free space as valid exploration area          | False  |
+
+
+---
+## [Mechanical Subsystem](mechanical.md)

@@ -51,4 +51,4 @@ title: End User Documentation and BOM
 
 ---
 
-Let me know if you'd like this exported into a `.md` file or embedded into a webpage.
+## [Areas for Improvement](improvements.md)

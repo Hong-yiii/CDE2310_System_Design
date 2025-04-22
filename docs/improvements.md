@@ -48,3 +48,8 @@ A more **reactive and opportunistic strategy** could be adopted: instead of comp
 - **Trade-off Consideration:** Although this sacrifices some global confidence for speed, it might align better with time-constrained tasks where partial detection is acceptable or where victims are likely to be located near entry points or known zones.
 
 - **Implementation Direction:** This strategy could be implemented with dynamic priority queues, adjusting navigation goals in real-time based on live sensor input, and applying thresholds or Bayesian filters to trigger launches upon strong localized detections.
+
+
+---
+
+## [Home](index.md)

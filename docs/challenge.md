@@ -112,3 +112,7 @@ The robot is designed to accomplish the following core objectives within a const
 | Onboard Processing   | All computation must run on a Raspberry Pi 4B, limiting complex image or point cloud algorithms                 |
 | Environmental Conditions | Must be robust to indoor lighting variability and surface irregularities within the testing arena          |
 | Budget               | Must be built under a S$80 budget, including sensors, launcher, wiring, and chassis materials                  |
+
+
+--- 
+## [General System](general-system.md)

@@ -223,3 +223,7 @@ The 3 jumper cables are for the ESCs and common ground.
 - Software attempts to reduce the jitter were unsuccessful because the movement amplitude fluctuated erratically.  
 - Manually readjusting the servo position in between runs is a temporary fix.  
 - A limit switch at the tube's base is suggested as a future solution to enable the servo to self-calibrate its depth, increasing repeatability and dependability.
+
+---
+
+## [Thermal Subsystem](thermal.md)
