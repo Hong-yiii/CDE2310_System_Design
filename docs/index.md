@@ -30,11 +30,13 @@ This is a robotics project built on the ROS2 framework. It features:
   </iframe>
 </div>
 
-
-<video width="640" height="360" controls>
-  <source src="assets/images/Final_run.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+### Final navitgation run at 4x speed
+<div style="display: flex; justify-content: center; margin: 2em 0;">
+  <video width="640" height="360" controls style="border: 2px solid #ddd; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <source src="assets/images/Final_run.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ---
 
