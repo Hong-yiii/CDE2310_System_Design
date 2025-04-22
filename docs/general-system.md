@@ -11,7 +11,7 @@ title: General System
 - [Mechanical Subsystem](mechanical.md)
 - [Electrical Subsystem](electrical.md)
 - [Thermal Subsystem](thermal.md)
-- [Testing & Validation](testing.md)
+- [End User Documentation](user_docs.md)
 - [Areas for Improvement](improvements.md)
 
 ---

@@ -49,7 +49,7 @@ This is a robotics project built on the ROS2 framework. It features:
 - [Mechanical Subsystem](mechanical.md)
 - [Electrical Subsystem](electrical.md)
 - [Thermal Subsystem](thermal.md)
-- [Testing & Validation](testing.md)
+- [End User Documentation](user_docs.md)
 - [Areas for Improvement](improvements.md)
 
 

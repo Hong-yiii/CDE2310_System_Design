@@ -1,5 +1,5 @@
 ---
-title: Testing and Validation
+title: End User Documentation and BOM
 ---
 
 # 🔗 Navigation
@@ -11,11 +11,11 @@ title: Testing and Validation
 - [Mechanical Subsystem](mechanical.md)
 - [Electrical Subsystem](electrical.md)
 - [Thermal Subsystem](thermal.md)
-- [Testing & Validation](testing.md)
+- [End User Documentation](user_docs.md)
 - [Areas for Improvement](improvements.md)
 
 ---
 
-# Testing and Validation
+# End User Documentation and BOM
 
 Content coming soon.
