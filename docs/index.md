@@ -1,6 +1,6 @@
 ---
 title: Fundamentals of System Design CDE2310
-description: A ROS2-based autonomous robot using Lidar, thermal vision, and flywheel launcher.
+description: A ROS2-based autonomous robot using LiDAR, Thermal Vision, and Flywheel Launcher.
 show_downloads: true
 ---
 
