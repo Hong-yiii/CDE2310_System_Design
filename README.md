@@ -43,19 +43,14 @@ This repository includes:
 
 ## 🛠️ Tech Stack
 
-- ROS2 (Foxy or Humble)
+- ROS2 (Humble)
 - Nav2 (Navigation Stack)
 - Ignition Gazebo
 - Python / C++
 - Custom 3D-printed parts + electronics integration
 
----
-
-## 📬 Feedback & Contributions
-
-Feel free to open issues or submit pull requests — we’re happy to discuss improvements or implementation details.
 
 ---
 
-Made with too many late nights and shared trauma 😅
+Made with too many late nights, shared trauma and lots of love ❤️
 
