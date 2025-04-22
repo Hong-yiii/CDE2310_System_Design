@@ -91,7 +91,7 @@ It handles:
 
 ---
 
-## 🛰️ Communication Infrastructure
+## Communication Infrastructure
 
 All modules interact via ROS2 topics with appropriate QoS profiles. Key topics include:
 
