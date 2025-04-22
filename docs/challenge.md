@@ -19,7 +19,7 @@ title: The Challenge
 # The Challenge
 
 
-## 1.1 Problem Definition
+## Problem Definition
 
 This project aims to design and develop an autonomous mobile robot capable of navigating a maze-like environment, detecting heat sources, and engaging with them by performing a launch task. The robot simulates a deployed unit in a thermal response scenario, where it must autonomously locate and engage “hot” targets placed throughout the maze.
 
@@ -39,9 +39,9 @@ An example of the maze is given below._
 ![Maze Layout](assets/images/the_challenge/maze_picture.png)
 ---
 
-## 1.2 Mission Objectives
+## Mission Objectives
 
-### 1.2.1 Core Objectives
+### Core Objectives
 
 The robot is designed to accomplish the following core objectives within a constrained arena environment:
 
@@ -59,7 +59,7 @@ The robot is designed to accomplish the following core objectives within a const
 
 ---
 
-### 1.2.2 Project Deliverables
+### Project Deliverables
 
 | Stakeholder Requirement                              | Project Deliverable                                                                                   |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ The robot is designed to accomplish the following core objectives within a const
 
 ---
 
-### 1.2.3 Functional Requirements
+### Functional Requirements
 
 | Stakeholder Requirement       | Functional Requirement                                                                                   |
 |------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ The robot is designed to accomplish the following core objectives within a const
 
 ---
 
-### 1.2.4 Non-functional Requirements
+### Non-functional Requirements
 
 | Requirement Category | Non-functional Requirement                                                                                       |
 |----------------------|------------------------------------------------------------------------------------------------------------------|
@@ -101,7 +101,7 @@ The robot is designed to accomplish the following core objectives within a const
 
 ---
 
-### 1.2.5 Constraints
+### Constraints
 
 | Constraint           | Description                                                                                                     |
 |----------------------|------------------------------------------------------------------------------------------------------------------|
